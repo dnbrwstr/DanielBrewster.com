@@ -26,6 +26,7 @@ img:hover {
 
 body {
 	background-color: #EEE;
+	min-width: 1409px;
 }
 
 #title {
