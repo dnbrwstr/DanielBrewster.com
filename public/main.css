@@ -1,0 +1,48 @@
+  @font-face {
+                    font-family: 'CaslonFiveForty-Roman';
+                    src: url('CasloFivForRom.eot');
+   }
+
+  @font-face {
+                    font-family: 'CaslonFiveForty-Roman';
+                    src: url('CasloFivForRom.woff') format('woff'),
+                    url('CasloFivForRom.svg#CaslonFiveForty-Roman') format('svg');
+   }
+
+img {
+	display: block;
+	float: left;
+	margin: 100px;
+	max-width: 600px;
+	max-height: 600px;
+	-webkit-transform: rotate(20deg);
+	-webkit-transition: all 250ms linear;
+	/* box-shadow: 5px 6px 10px 1px #CCC; */
+}
+
+img:hover {
+	-webkit-transform: rotate(24deg);
+}
+
+body {
+	background-color: #EEE;
+}
+
+#title {
+	position: fixed;
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+	text-align: center;
+	top: 40%;
+	letter-spacing: -1px;
+	font-family: "CaslonFiveForty-Roman";
+	font-size: 22px;
+}
+
+a {
+	font-family: arial;
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
+}
