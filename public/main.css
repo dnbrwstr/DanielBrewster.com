@@ -1,49 +1,8 @@
-  @font-face {
-                    font-family: 'CaslonFiveForty-Roman';
-                    src: url('CasloFivForRom.eot');
-   }
-
-  @font-face {
-                    font-family: 'CaslonFiveForty-Roman';
-                    src: url('CasloFivForRom.woff') format('woff'),
-                    url('CasloFivForRom.svg#CaslonFiveForty-Roman') format('svg');
-   }
-
-img {
-	display: block;
-	float: left;
-	margin: 100px;
-	max-width: 600px;
-	max-height: 600px;
-	-webkit-transform: rotate(20deg);
-	-webkit-transition: all 250ms linear;
-	/* box-shadow: 5px 6px 10px 1px #CCC; */
-}
-
-img:hover {
-	-webkit-transform: rotate(24deg);
-}
-
-body {
-	background-color: #EEE;
-	min-width: 1409px;
-}
-
-#title {
-	position: fixed;
-	width: 300px;
-	left: 50%;
-	margin-left: -150px;
-	text-align: center;
-	top: 40%;
-	letter-spacing: -1px;
-	font-family: "CaslonFiveForty-Roman";
-	font-size: 22px;
-}
-
-a {
-	font-family: arial;
-	font-size: 18px;
-	color: black;
-	text-decoration: none;
-}
+@font-face{font-family:'CaslonFiveForty-Roman';src:url("CasloFivForRom.eot")}
+@font-face{font-family:'CaslonFiveForty-Roman';src:url("CasloFivForRom.woff") format('woff'),url("CasloFivForRom.svg") format('svg')}
+#wrapper{width:30000px;position:fixed;top:0;left:0}
+body{height:30000px}
+img{display:block;float:left;height:100%;width:auto;}
+body{background-color:#eee;min-width:1409px}
+#title{position:fixed;width:300px;left:50%;margin-left:-150px;text-align:center;top:40%;letter-spacing:-1px;font-family:"CaslonFiveForty-Roman";font-size:28px;z-index:1}
+a{font-family:arial;font-size:18px;color:#000;text-decoration:none}
