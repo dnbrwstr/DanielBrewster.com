@@ -1,15 +1,26 @@
-$(window).load ->
-	$('img').css height : $(window).height()
-	leftImg = $('#wrapper img:last')
-	rightPoint = leftImg.position().left + leftImg.outerWidth(true)
-	$('body').css height : rightPoint + 'px'
-	$('#wrapper').css width : rightPoint + 'px'
+$ ->
 
+	$(window).bind 'load resize', ->
+		sizeObjects()
 
-$(window).scroll ->
-	top = $(window).scrollTop()
-	if (top - $(window).height() < $('#wrapper').width() - ($(window).width() - 1200) / 2)
-		$('#wrapper').css left : -$(window).scrollTop()
- 
+	$(window).scroll ->
+		$('#wrapper').css 
+			left : -$(window).scrollTop()
 
-  
+	sizeObjects  = ->
+		
+		$('#wrapper').css
+			width: 30000 + 'px'
+
+		$('img').css 
+			height : $(window).height()
+			width : 'auto'
+
+		rightImg = $('#wrapper img:last')
+		rightPoint = rightImg.position().left + rightImg.outerWidth(true)
+
+		$('body').css 
+			height : rightPoint - $(window).width() + $(window).height() + 'px'
+			
+		$('#wrapper').css 
+			width : rightPoint + 'px'

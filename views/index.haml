@@ -6,6 +6,7 @@
 		%script{:src=>"/main.js"}
 	%body
 		%a#title{:href=>"mailto:dnbrwstr@gmail.com"} Dan Brewster
-		- 3.times do
-			- @images.each do |image|
-				%img{:src=>"/images/" +  image}
+		#wrapper
+			- 1.times do
+				- @images.each do |image|
+					%img{:src=>"/images/" +  image}
