@@ -13,11 +13,7 @@
     return sizeObjects = function() {
       var rightImg, rightPoint;
       $('#wrapper').css({
-        width: 30000 + 'px'
-      });
-      $('img').css({
-        height: $(window).height(),
-        width: 'auto'
+        width: 50000 + 'px'
       });
       rightImg = $('#wrapper img:last');
       rightPoint = rightImg.position().left + rightImg.outerWidth(true);
