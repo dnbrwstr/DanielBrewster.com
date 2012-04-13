@@ -6,14 +6,8 @@
   font-family: 'CaslonFiveForty-Roman';
   src: url("AppleGarLig.woff") format('woff'), url("AppleGarLig.svg") format('svg');
 }
-#wrapper {
-  width: 30000px;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-}
-html {
+html,
+body {
   height: 100%;
   position: relative;
 }
@@ -21,16 +15,21 @@ body {
   height: 30000px;
   margin: 0px;
   overflow-x: hidden;
+  background-color: #eee;
+  min-width: 1409px;
 }
-img {
+#wrapper {
+  width: 30000px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+}
+#wrapper img {
   display: block;
   float: left;
   height: 100%;
   width: auto;
-}
-body {
-  background-color: #eee;
-  min-width: 1409px;
 }
 #title {
   position: fixed;
@@ -40,12 +39,14 @@ body {
   text-align: center;
   top: 40%;
   font-family: "CaslonFiveForty-Roman";
-  font-size: 54px;
+  font-size: 36px;
   z-index: 1;
-}
-a {
-  font-family: arial;
-  font-size: 18px;
   color: #000;
   text-decoration: none;
+}
+#forkLink img {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
 }

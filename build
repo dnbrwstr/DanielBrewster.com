@@ -1,0 +1,4 @@
+#!/bin/bash
+
+coffee -c ./public/*.coffee
+stylus -u nib ./public/*.styl
