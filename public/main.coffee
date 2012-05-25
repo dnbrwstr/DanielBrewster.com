@@ -1,11 +1,16 @@
 $ ->
 
+	$('#wrapper').append($('#wrapper img:first-child').clone())
+
 	$(window).bind 'load resize', ->
 		sizeObjects()
 
 	$(window).scroll ->
+		scrollTop = $(window).scrollTop()
 		$('#wrapper').css 
-			left : -$(window).scrollTop()
+			left : -scrollTop
+		if scrollTop + $(window).height() >= $('body').height()
+			$(window).scrollTop(0)
 
 	sizeObjects  = ->
 		
