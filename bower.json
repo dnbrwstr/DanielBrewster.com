@@ -1,0 +1,18 @@
+{
+  "name": "danielbrewster.com",
+  "version": "0.0.0",
+  "authors": [
+    "Daniel Brewster <dnbrwstr@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "two.js": "~0.4.0"
+  }
+}

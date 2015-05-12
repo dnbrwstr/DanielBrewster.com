@@ -1,0 +1,52 @@
+body, html {
+  height: 100%;
+}
+
+body { 
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.face-container {
+  min-height: 100%;
+  cursor: pointer;
+}
+
+.info {
+  padding: 60px 30px;
+  background: rgb(242, 242, 242);
+  line-height: 1.5;
+}
+
+.info-inner {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info-inner a {
+  color: inherit;
+}
+
+/* 
+  Hide face in unsupported browsers 
+  and at small screen sizes
+*/
+
+body.unsupported {
+  background: rgb(242, 242, 242);
+}
+
+body.unsupported .face-container {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  body {
+    background: rgb(242, 242, 242);
+  }
+
+  .face-container {
+    display: none;
+  }
+}
